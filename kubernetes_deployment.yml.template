@@ -5,7 +5,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: quickstart-se
+  name: quickstart-se100
   labels:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
@@ -20,7 +20,7 @@ spec:
         commit: ${WERCKER_GIT_COMMIT}
     spec:
       containers:
-      - name: quickstart-se
+      - name: quickstart-se100
         image: ${OCIR_REPO}:${WERCKER_GIT_COMMIT}
         ports:
         - name: quickstart-se100
