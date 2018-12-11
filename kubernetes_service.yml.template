@@ -5,14 +5,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quickstart-se100
+  name: quickstart-se99
   labels:
     app: quickstart-se100
     commit: ${WERCKER_GIT_COMMIT}
 spec:
   type: NodePort #Exposes the service as a node port -- old: LoadBalancer
   selector:
-    app: quickstart-se100
+    app: quickstart-se99
     commit: ${WERCKER_GIT_COMMIT}
   ports:
   - port: 8090
