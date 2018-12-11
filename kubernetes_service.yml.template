@@ -5,7 +5,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quickstart-se
+  name: quickstart-se100
   labels:
     app: quickstart-se
     commit: ${WERCKER_GIT_COMMIT}
